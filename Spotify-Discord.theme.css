@@ -1,17 +1,37 @@
 /**
- * @name Spotify Discord
- * @version 1.5.0
- * @description Combine Discord and Spotify into one
- * @author CapnKitten
- * 
- * @website http://github.com/CapnKitten
- * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Spotify-Discord/css/source.css
- * @donate https://paypal.me/capnkitten
- * @invite jzJkA6Z
- */
-
-@import url(https://capnkitten.github.io/BetterDiscord/Themes/Spotify-Discord/css/source.css);
-
+ * @name Font
+ * @author NFLD99
+ * @version 4
+ * @description Thank you for choosing NFLD Inc!
+ * @source https://github.com/NFLD99/Better-Discord
+ * @website https://nfld99.com/
+ * @patreon https://nfld99.com/patreon
+ * @authorLink https://discordhub.com/profile/483413721876529174
+ * @donate https://nfld99.com/paypal
+ * @authorId 483413721876529174
+ * @invite kWRYPrq
+*/
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/Yes.css);
 :root {
-	  --font: Berkshire Swash; /* Custom font | Default: 'Inter'
+  --Font-Used: 'Berkshire Swash', cursive;
+  /* https://nfld99.github.io/Better-Discord/Font_List.txt */
+  --Font-Size: 15px ;
+  /* mediumxx-smallx-smallsmalllargex-largexx-largesmallerlargerlengthinitialinherit; */
+  --Font-Style: normal ;
+  /* normalitalicobliqueinitialinherit; */
+  --Font-Weight: 200 ;
+  /* normalboldbolderlighternumberinitialinherit */
+  --Font-Variant: normal ;
+  /* normalsmall-capsinitialinherit */
+}
+
+*:not([class*="hljs"]):not(code){
+  font-family: var(--Font-Used)!important;
+  font-style: var(--Font-Style)!important;
+  font-weight:  var(--Font-Weight)!important;
+  font-variant: var(--Font-Variant)!important;
+}
+
+.markup:not(code) {
+  font-size: var(--Font-Size)!important;
 }
